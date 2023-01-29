@@ -1,0 +1,70 @@
+<h1 id="a4-report">A4 Report</h1>
+<p>Author: Terry Tran (sign your name here)</p>
+<p>Date: 2021/11/09 (insert the date)</p>
+<p>Check <a href="readme.txt" class="uri">readme.txt</a> for lab work statement and self-evaluation.</p>
+<h2 id="q1-culling-lighting-shading-short_answer">Q1 Culling, Lighting, Shading (short_answer)</h2>
+<h3 id="q1.1-concepts-of-culling">Q1.1 Concepts of culling</h3>
+<ul class="incremental">
+<li>The difference between culling and clipping is that in culling the objects not in the frame of the camera are removed, leaving fewer polygons to process. While in clipping the polygons that are beyond the camera are removed.</li>
+<li>The difference between object precision and image precision hidden surface removal algorithms is object precision algorithms will generate all objects in order of furthest from the camera view. While image precision will generate all objects simultaneously and determine the visiblity from the edges and vertices at each pixel position on the projection plane. Examples of both respectively are BSP-Trees and scan line algorthim.</li>
+</ul>
+<h3 id="q1.2-culling-computing">Q1.2 Culling computing</h3>
+<figure>
+<img src="images/a4q1.2.jpg" alt="Back face and depth calculations." style="width:90.0%" /><figcaption>Back face and depth calculations.</figcaption>
+</figure>
+<h3 id="q1.3-concepts-of-lighting-and-shading">Q1.3 Concepts of lighting and shading</h3>
+<ul class="incremental">
+<li>The four light models are directional, point, ambient, and emission.</li>
+<li>A light model determines the light intensity of a surface based on the light source, object, and reflect light.</li>
+<li>A shading model determines how a pixel color is calculated based on the light reflections, the models are constant, gouraud, and phong shading.</li>
+<li>The Gouraud shading model interpolates the colors of vertices.</li>
+</ul>
+<h3 id="q1.4-lighting-computing">Q1.4 Lighting computing</h3>
+<figure>
+<img src="images/a4q1.4.jpg" alt="Reflection intensity calculations." style="width:90.0%" /><figcaption>Reflection intensity calculations.</figcaption>
+</figure>
+<h2 id="q2-opengl-culling-lighting-shading-lab-practice">Q2 OpenGL culling, lighting, shading (lab practice)</h2>
+<h3 id="q2.1-hidden-surface-removal">Q2.1 Hidden surface removal</h3>
+<p>Complete? (Yes/No)</p>
+<p>If Yes, insert a screen shot image to show the completion.</p>
+<p><img src="images/2.1.1.png" alt="Simple culling" style="width:90.0%" /> <img src="images/2.1.2.png" alt="Pass and render cube data" style="width:90.0%" /></p>
+<p>If No, Add a short description to describe the issues encountered.</p>
+<h3 id="q2.2-lighting-and-shading">Q2.2 Lighting and Shading</h3>
+<p>Complete? (Yes/No)</p>
+<p>If Yes, insert a screen shot image to show the completion.</p>
+<p><img src="images/2.2.1.png" alt="Drawing a Lit Sphere" style="width:90.0%" /> <img src="images/2.2.2.png" alt="Moving a Light with Modeling Transformations" style="width:90.0%" /> <img src="images/2.2.3.png" alt="Programming material properties" style="width:90.0%" /> <img src="images/2.2.4.png" alt="General lighting and shading" style="width:90.0%" /></p>
+<p>If No, Add a short description to describe the issues encountered.</p>
+<h2 id="q3-simpleview2---culling-lighting-shading-programming">Q3 SimpleView2 - culling, lighting, shading (programming)</h2>
+<h3 id="q3.1-culling">Q3.1 Culling</h3>
+<p>Complete? (Yes/No)</p>
+<p>If Yes, insert a screen shot image to show the completion.</p>
+<figure>
+<img src="images/3.1.png" alt="Hidden surface removal" style="width:90.0%" /><figcaption>Hidden surface removal</figcaption>
+</figure>
+<p>If No, add a short description to describe the issues encountered.</p>
+<h3 id="q3.2-lighting">Q3.2 Lighting</h3>
+<p>Complete? (Yes/No)</p>
+<p>If Yes, insert a screen shot image to show the completion.</p>
+<figure>
+<img src="images/3.2.png" alt="Light models" style="width:90.0%" /><figcaption>Light models</figcaption>
+</figure>
+<p>If No, add a short description to describe the issues encountered.</p>
+<h3 id="q3.3-shading">Q3.3 Shading</h3>
+<p>Complete? (Yes/No)</p>
+<p>If Yes, insert a screen shot image to show the completion.</p>
+<figure>
+<img src="images/3.3.png" alt="Shading models" style="width:90.0%" /><figcaption>Shading models</figcaption>
+</figure>
+<p>If No, add a short description to describe the issues encountered.</p>
+<h3 id="q3.4-animations">Q3.4 Animations</h3>
+<p>Complete? (Yes/No)</p>
+<p>If Yes, insert a screen shot image to show the completion.</p>
+<figure>
+<img src="images/3.4.png" alt="Multiple animations" style="width:90.0%" /><figcaption>Multiple animations</figcaption>
+</figure>
+<p>If No, add a short description to describe the issues encountered.</p>
+<p><strong>References</strong></p>
+<ol class="incremental" type="1">
+<li>CP411 a4</li>
+<li>Add your references if you used.</li>
+</ol>

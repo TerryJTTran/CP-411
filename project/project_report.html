@@ -1,0 +1,59 @@
+<h1 id="project-report">Project Report</h1>
+<p>Title: Galactic Visitors</p>
+<p>Author(s): Terry Tran</p>
+<p>Date: 2021-12-07</p>
+<p>Check <a href="readme.txt" class="uri">readme.txt</a> for project statement and self-evaluation.</p>
+<h2 id="r1-proposal-proposal">R1 Proposal (proposal)</h2>
+<h3 id="r1.1-application-and-problem-description">R1.1 Application and problem description</h3>
+<p>Add a link to the project proposal.</p>
+<p><a href="proposal.html">project proposal</a></p>
+<p>Write a comment if your project implementation is different what you proposed. Project no longer includes a 3D aspect and is not a perfect replication of space invaders. The name was also changed to Galactic Visitors.</p>
+<h2 id="r2-design-implementation-programming">R2 Design &amp; implementation (programming)</h2>
+<h3 id="r2.1-problem-solving-and-algorithms">R2.1 Problem solving and algorithms</h3>
+<p>Write a paragraph to high light how you solved the problem in your project.</p>
+<p>You can use screen shot to show the result of your solution.</p>
+<p>There were issues when developing shot collision, alien animation and assigning different colors to different objects. When making shot collision there was an issue differentiating between each object but the solution was to designate specific ids to objects so they could be found by simply searching for the id. The issue with the alien animation was that the furthest left and right alien must reach the end to change direction, but when aliens are destroyed it becomes difficult to locate the most right or left alien. The solution I found was to designate the start most left and right aliens in the top row at the start, then when those aliens are eliminated check all the ids for next alive alien that is the most left or right. This solution was chosen because the top row should be the last row to eliminate and to ensure that in the case that it is eliminated before last that the correct alien if selected. The issue of assigning different objects different colors occurred because each object was formed from cube objects, making the general color values of the cube static for all objects. The solution to this was to create a method in the cube class that would take rgb float values and set the cube object equal to them, thus after each object is create I simply call the method. The issue about potential performance issues due to the many objects appeared to not be an issue. One issue that I was unable to solve was that opensound does not support multiple sounds playing simultaneously, thus when the game is played some sounds are cutoff.</p>
+<h3 id="r2.2-completion-of-the-project">R2.2 Completion of the project</h3>
+<p>Give a list of completed features of your project.</p>
+<p>You can use screen shot to show the result of the features.</p>
+<figure>
+<img src="images\features.png" alt="Features" style="width:90.0%" /><figcaption>Features</figcaption>
+</figure>
+<p>Completed features include:</p>
+<ul class="incremental">
+<li>Tank movement.</li>
+<li>Tank firing.</li>
+<li>Bullet movement.</li>
+<li>Bullet/Alien explosion.</li>
+<li>Different colored objects.</li>
+<li>Alien movement.</li>
+<li>Alien progressive speed increase.</li>
+<li>Sound effects.</li>
+<li>Key inputs.</li>
+</ul>
+<h3 id="r2.3-new-features">R2.3 New features</h3>
+<p>Give a list of new features on CG objects and OpenGL you used in the project.</p>
+<p>You can use screen shot to show the result of the new features.</p>
+<figure>
+<img src="images\organization.png" alt="Objects" style="width:90.0%" /><figcaption>Objects</figcaption>
+</figure>
+<ul class="incremental">
+<li>Tank object.</li>
+<li>Bullet object.</li>
+<li>Alien object.</li>
+<li>Explosion object.</li>
+<li>Animation control.</li>
+<li>Sound effects.</li>
+</ul>
+<h3 id="r2.4-program-design-and-organization">R2.4 Program design and organization</h3>
+<p>Write a paragraph to explain your program design and organization.</p>
+<p>You can use screen shot to show the program structure.</p>
+<p>The program was designed using the SimpleView3 assignment developed in class. The new objects required for the project were created by developing their own classes. The animation methods were stored in the animation class as a central file that could use all the other files without conflict.</p>
+<h2 id="r3-project-presentation-document">R3 Project presentation (document)</h2>
+<h3 id="r3.1-project-documentation">R3.1 Project documentation</h3>
+<p>This report is used as document. Alternatively, you can write a separate document in text, md, or html format, and add the link to the file.</p>
+<p><a href="document.html">Project document</a></p>
+<h3 id="r3.2-project-demonstration">R3.2 Project demonstration</h3>
+<p>Add the link to the media file of your project demonstration. <strong>You don’t need to include the demonstration video if you demonstrated your project in class</strong>.</p>
+<p><a href="images/video%20file%20name">Project demonstration</a></p>
+<p><strong>End</strong></p>
